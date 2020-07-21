@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>PeeperThymeleaf</title>
+    <title th:text="#{index.page.title}">Page Title</title>
 	  
     <link th:href="@{/css/bootstrap/bootstrap.min.css}" rel="stylesheet" media="screen"/>
 
@@ -130,15 +130,15 @@
 <body>
 	<div class="jumbotron">
 	    <div class="container">
-	        <h1>PeeperThymeleaf</h1>
-	        <p class="lead">SpringBoot project focused on the practice of thymeleaf</p>
+	        <h1 th:text="#{index.page.title}">index.page.title</h1>
+	        <p class="lead" th:text="#{index.projects.tagline}">index.projects.tagline</p>
 	    </div>
 	</div>
 	
 	<div class="container">
 	    <div class="row">
 	        <div class="col-md-12">
-	            <h1>My personal projects in Github</h1>
+	            <h1 th:text="#{index.projects.headline}">index.projects.headline</h1>
 	        </div>
 	    </div>
 	
