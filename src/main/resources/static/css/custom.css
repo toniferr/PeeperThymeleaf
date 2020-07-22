@@ -116,3 +116,11 @@ img {
     overflow: hidden;
     padding-left: 5px;
 }
+
+.footer-b {
+	background: #ebae6b;
+}
+
+.footer-p {
+	padding-top: 20px;
+}
