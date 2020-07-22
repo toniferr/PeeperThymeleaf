@@ -64,7 +64,14 @@ public class ProjectServiceImpl implements ProjectService {
         Project eurosnovos= new Project();
         eurosnovos.setId(1);
         eurosnovos.setName("EurosNovos");
-        eurosnovos.setDescription("SpringBoot Application");
+        eurosnovos.setSubtitule("SpringBoot Application");
+        eurosnovos.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
+        		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
+        		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
+        		"						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\r\n" + 
+        		"						reprehenderit in voluptate velit esse cillum dolore eu fugiat\r\n" + 
+        		"						nulla pariatur. Excepteur sint occaecat cupidatat non proident,\r\n" + 
+        		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         eurosnovos.setDeveloper(developer);
         eurosnovos.setLicense("GNU v.3");
         eurosnovos.setImageURL("eurosnovos.jpg");        
@@ -76,7 +83,14 @@ public class ProjectServiceImpl implements ProjectService {
         Project cryptokit = new Project();
         cryptokit.setId(2);
         cryptokit.setName("Cryptokit");
-        cryptokit.setDescription("Java Swing with JCA and BouncyCastle");
+        cryptokit.setSubtitule("Java Swing with JCA and BouncyCastle");
+        cryptokit.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
+        		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
+        		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
+        		"						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\r\n" + 
+        		"						reprehenderit in voluptate velit esse cillum dolore eu fugiat\r\n" + 
+        		"						nulla pariatur. Excepteur sint occaecat cupidatat non proident,\r\n" + 
+        		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         cryptokit.setDeveloper(developer);
         cryptokit.setLicense("GNU v.3");
         cryptokit.setImageURL("cryptokit.jpg");        
@@ -87,7 +101,14 @@ public class ProjectServiceImpl implements ProjectService {
         Project setupmakeup = new Project();
         setupmakeup.setId(3);
         setupmakeup.setName("Setup-Makeup");
-        setupmakeup.setDescription("Spring MVC application (xml conf) and Tiles");
+        setupmakeup.setSubtitule("Spring MVC application (xml conf) and Tiles");
+        setupmakeup.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
+        		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
+        		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
+        		"						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\r\n" + 
+        		"						reprehenderit in voluptate velit esse cillum dolore eu fugiat\r\n" + 
+        		"						nulla pariatur. Excepteur sint occaecat cupidatat non proident,\r\n" + 
+        		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         setupmakeup.setDeveloper(developer);
         setupmakeup.setLicense("GNU v.3");
         setupmakeup.setImageURL("setup-makeup.jpg");        
@@ -99,7 +120,14 @@ public class ProjectServiceImpl implements ProjectService {
         Project setuptecnorepo = new Project();
         setuptecnorepo.setId(4);
         setuptecnorepo.setName("Setup-Tecnorepo");
-        setuptecnorepo.setDescription("Struts 2 application");
+        setuptecnorepo.setSubtitule("Struts 2 application");
+        setuptecnorepo.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
+        		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
+        		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
+        		"						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\r\n" + 
+        		"						reprehenderit in voluptate velit esse cillum dolore eu fugiat\r\n" + 
+        		"						nulla pariatur. Excepteur sint occaecat cupidatat non proident,\r\n" + 
+        		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         setuptecnorepo.setDeveloper(developer);
         setuptecnorepo.setLicense("GNU v.3");
         setuptecnorepo.setImageURL("setup-tecnorepo.jpg");        
@@ -111,7 +139,14 @@ public class ProjectServiceImpl implements ProjectService {
         Project peeperjava = new Project();
         peeperjava.setId(5);
         peeperjava.setName("Peeperjava");
-        peeperjava.setDescription("Maven project with multiple Java versions");
+        peeperjava.setSubtitule("Maven project with multiple Java versions");
+        peeperjava.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
+        		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
+        		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
+        		"						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\r\n" + 
+        		"						reprehenderit in voluptate velit esse cillum dolore eu fugiat\r\n" + 
+        		"						nulla pariatur. Excepteur sint occaecat cupidatat non proident,\r\n" + 
+        		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         peeperjava.setDeveloper(developer);
         peeperjava.setLicense("Apache");
         peeperjava.setImageURL("peeperjava.jpg");        
@@ -122,7 +157,14 @@ public class ProjectServiceImpl implements ProjectService {
         Project peepermaven = new Project();
         peepermaven.setId(6);
         peepermaven.setName("Peepermaven");
-        peepermaven.setDescription("Maven projects with multiple elements of Maven");
+        peepermaven.setSubtitule("Maven projects with multiple elements of Maven");
+        peepermaven.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
+        		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
+        		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
+        		"						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\r\n" + 
+        		"						reprehenderit in voluptate velit esse cillum dolore eu fugiat\r\n" + 
+        		"						nulla pariatur. Excepteur sint occaecat cupidatat non proident,\r\n" + 
+        		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         peepermaven.setDeveloper(developer);
         peepermaven.setLicense("Apache");
         peepermaven.setImageURL("peepermaven.jpg");        

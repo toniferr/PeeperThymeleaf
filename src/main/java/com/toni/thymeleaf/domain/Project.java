@@ -7,6 +7,7 @@ public class Project {
 
 	private Integer id;
 	private String name;
+	private String subtitule;
 	private String description;
 	private String license;
 	private String imageURL;
@@ -24,6 +25,12 @@ public class Project {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}	
+	public String getSubtitule() {
+		return subtitule;
+	}
+	public void setSubtitule(String subtitule) {
+		this.subtitule = subtitule;
 	}
 	public String getDescription() {
 		return description;

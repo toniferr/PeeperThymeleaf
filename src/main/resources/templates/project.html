@@ -24,21 +24,21 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1>Github project - name</h1>
+				<h1 th:text="${project.name}">Github project - name</h1>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
 
 				<img alt="cryptokit" 
-					th:src="@{/images/cryptokit.jpg}"
+					th:src="@{/images/eurosnovos.jpg}"
 					class="img-project center-block" />
 
 			</div>
 			<div class="col-md-6">
 				<div>
-					<h2>CryptoKit</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+					<h2 th:text="${project.subtitule}">Project subtitule</h2>
+					<p th:text="${project.description}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 						enim ad minim veniam, quis nostrud exercitation ullamco laboris
 						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
