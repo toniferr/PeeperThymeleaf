@@ -36,7 +36,7 @@ public class ProjectServiceImpl implements ProjectService {
         Developer developer = new Developer();
         developer.setId(1);
         developer.setFirstName("Toni");
-        developer.setLastName("Thompson");
+        developer.setLastName("Ferreiro");
         developer.setImage("luigi.png");
 
         ProjectCategory springBoot= new ProjectCategory();
@@ -74,7 +74,7 @@ public class ProjectServiceImpl implements ProjectService {
         		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         eurosnovos.setDeveloper(developer);
         eurosnovos.setLicense("GNU v.3");
-        eurosnovos.setImageURL("eurosnovos.jpg");        
+        eurosnovos.setImageUrl("eurosnovos.jpg");        
         eurosnovos.getCategories().add(springBoot);         
         eurosnovos.getCategories().add(maven);           
         projectMap.put(1, eurosnovos);
@@ -93,7 +93,7 @@ public class ProjectServiceImpl implements ProjectService {
         		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         cryptokit.setDeveloper(developer);
         cryptokit.setLicense("GNU v.3");
-        cryptokit.setImageURL("cryptokit.jpg");        
+        cryptokit.setImageUrl("cryptokit.jpg");        
         cryptokit.getCategories().add(java);            
         cryptokit.getCategories().add(maven);        
         projectMap.put(2, cryptokit);
@@ -111,7 +111,7 @@ public class ProjectServiceImpl implements ProjectService {
         		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         setupmakeup.setDeveloper(developer);
         setupmakeup.setLicense("GNU v.3");
-        setupmakeup.setImageURL("setup-makeup.jpg");        
+        setupmakeup.setImageUrl("setup-makeup.jpg");        
         setupmakeup.getCategories().add(springmvc);          
         setupmakeup.getCategories().add(maven);          
         projectMap.put(3, setupmakeup);
@@ -130,7 +130,7 @@ public class ProjectServiceImpl implements ProjectService {
         		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         setuptecnorepo.setDeveloper(developer);
         setuptecnorepo.setLicense("GNU v.3");
-        setuptecnorepo.setImageURL("setup-tecnorepo.jpg");        
+        setuptecnorepo.setImageUrl("setup-tecnorepo.jpg");        
         setuptecnorepo.getCategories().add(struts);               
         setuptecnorepo.getCategories().add(maven);     
         projectMap.put(4, setuptecnorepo);
@@ -149,7 +149,7 @@ public class ProjectServiceImpl implements ProjectService {
         		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         peeperjava.setDeveloper(developer);
         peeperjava.setLicense("Apache");
-        peeperjava.setImageURL("peeperjava.jpg");        
+        peeperjava.setImageUrl("peeperjava.jpg");        
         peeperjava.getCategories().add(java);        
         projectMap.put(5, peeperjava);
 
@@ -167,7 +167,7 @@ public class ProjectServiceImpl implements ProjectService {
         		"						sunt in culpa qui officia deserunt mollit anim id est laborum.");
         peepermaven.setDeveloper(developer);
         peepermaven.setLicense("Apache");
-        peepermaven.setImageURL("peepermaven.jpg");        
+        peepermaven.setImageUrl("peepermaven.jpg");        
         peepermaven.getCategories().add(maven);        
         projectMap.put(6, peepermaven);
 

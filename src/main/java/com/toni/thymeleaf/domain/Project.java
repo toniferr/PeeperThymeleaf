@@ -10,7 +10,7 @@ public class Project {
 	private String subtitule;
 	private String description;
 	private String license;
-	private String imageURL;
+	private String imageUrl;
 	private Developer developer;
 	private List<ProjectCategory> categories = new ArrayList<>();
 	
@@ -44,11 +44,11 @@ public class Project {
 	public void setLicense(String license) {
 		this.license = license;
 	}	
-	public String getImageURL() {
-		return imageURL;
+	public String getImageUrl() {
+		return imageUrl;
 	}
-	public void setImageURL(String imageURL) {
-		this.imageURL = imageURL;
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 	public Developer getDeveloper() {
 		return developer;

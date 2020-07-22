@@ -13,47 +13,71 @@
 </head>
 <body>
 
-	<div class="jumbotron">
+	<div class="jumbotron" th:replace="fragments/jumbotron :: jumbotron">
 		<div class="container">
 			<h1>PeeperThymeleaf</h1>
 			<p class="lead">SpringBoot project focused on the practice of
 				thymeleaf</p>
 		</div>
 	</div>
-
+	
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h1 th:text="${project.name}">Github project - name</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-
-				<img alt="cryptokit" 
-					th:src="@{/images/eurosnovos.jpg}"
-					class="img-project center-block" />
-
-			</div>
-			<div class="col-md-6">
-				<div>
-					<h2 th:text="${project.subtitule}">Project subtitule</h2>
-					<p th:text="${project.description}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-						enim ad minim veniam, quis nostrud exercitation ullamco laboris
-						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat
-						nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-offset-6 col-md-4">
-				<button class="btn-success">Star!</button>
-			</div>
-		</div>
+	    <div class="row">
+	        <div class="col-md-12">
+	            <h1 th:text="${project.name}">Github project Name</h1>
+	        </div>
+	    </div>
+	    <div class="row course-listing">
+	        <div class="col-md-6">
+	           <div class="row">
+	               <div class="col-md-12">
+	                   <img src="../static/images/cryptokit.png"
+	                   		alt="image project"
+	                        th:src="@{'/images/'+${project.imageUrl}}"
+	                        class="img-project center-block"/>
+	               </div>
+	           </div>
+	            <div class="row course-listing-extra-info col-xl-12">
+	                <div class="col-xl-8">
+	                    <img alt="Toni Ferreiro"
+	                         src="../static/images/luigi.png"
+	                         th:src="@{'/images/'+${project.developer.image}}"
+	                         class="img-circle"/>
+	                    <div class="small course-author-name" th:text="${(project.developer.firstName)
+	                                                          + ' ' + (project.developer.lastName)}">
+	                        Developer Name
+	                    </div>
+	                </div>
+	                <div class="col-xl-4">
+	                    <div class="small course-price" th:text="${project.license}">
+	                    <!-- <div class="small course-price" th:text="${product.price > 0 ? '$' + product.price : 'FREE'}">  -->
+	                        license
+	                    </div>
+	                </div>
+	            </div>
+	
+	        </div>
+	        <div class="col-md-6">
+	             <div>
+	                 <h2 th:text="${project.subtitule}">Course Title</h2>
+	                 <p th:text="${project.description}">Adipiscing magna vestibulum fringilla tristique ad a primis ante mi inceptos condimentum curabitur
+	                     curabitur eu sed nullam ridiculus nunc montes id nostra dui inceptos scelerisque posuere ipsum mus.
+	                     A scelerisque libero viverra eu condimentum mollis suscipit mi consectetur semper dis ipsum nisi
+	                     in nullam aliquet iaculis in eros euismod bibendum. Adipiscing volutpat fringilla bibendum duis a
+	                     maecenas eu lorem accumsan fames sem faucibus ad mauris aliquam nam. Torquent amet adipiscing fusce
+	                     fringilla venenatis tristique scelerisque natoque malesuada nostra duis nam augue ridiculus
+	                     pulvinar ultrices laoreet in condimentum justo id. Nascetur condimentum maecenas magna metus curae
+	                     est odio ad dui fames quam a aenean consequat faucibus nostra lorem adipiscing vestibulum
+	                     ullamcorper etiam consectetur. </p>
+	             </div>
+	        </div>
+	    </div>
+	
+	    <div class="button-p row">
+	        <div class="col-md-offset-6 col-md-4">
+	            <button class="btn-success" th:text="#{button.star}">Star</button>
+	        </div>
+	    </div>
 	</div>
 	
 	<div class="container" th:replace="fragments/footer :: footer">

@@ -6,11 +6,6 @@
 }
 
 body {
-    color: #2b3636;
-    font-family: "Proxima";
-}
-
-body {
     color: #333;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -70,6 +65,7 @@ body {
 }
 
 .img-project {
+	padding: 20px;
     width: 100%;
 }
 
@@ -122,5 +118,10 @@ img {
 }
 
 .footer-p {
-	padding-top: 20px;
+	padding-top: 50px;
+}
+
+.button-p {
+	padding-top: 60px;
+    padding-bottom: 21px;
 }
