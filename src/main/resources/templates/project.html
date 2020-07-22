@@ -55,11 +55,20 @@
 	                    </div>
 	                </div>
 	            </div>
+	            
+	            <div class="row col-xl-12">
+	                <ol class="breadcrumb" >
+	                    <li th:each="projectCategory : ${project.categories}">
+	                        <a href="#" th:text="${projectCategory.name}">Cat 1</a></li>
+	                    <li th:remove="all"><a href="#">Cat 2</a></li>
+	                    <li th:remove="all"><a href="#">Cat 3</a></li>
+	                </ol>
+	            </div>
 	
 	        </div>
 	        <div class="col-md-6">
 	             <div>
-	                 <h2 th:text="${project.subtitule}">Course Title</h2>
+	                 <h2 th:text="${project.subtitle}">Course Title</h2>
 	                 <p th:text="${project.description}">Adipiscing magna vestibulum fringilla tristique ad a primis ante mi inceptos condimentum curabitur
 	                     curabitur eu sed nullam ridiculus nunc montes id nostra dui inceptos scelerisque posuere ipsum mus.
 	                     A scelerisque libero viverra eu condimentum mollis suscipit mi consectetur semper dis ipsum nisi

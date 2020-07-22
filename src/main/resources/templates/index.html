@@ -26,17 +26,32 @@
 	        </div>
 	    </div>
 	    
-	    <table>
-	       <tr>
-	           <th>ID</th>
-	           <th>Name</th>
-	       </tr>
-	       <tr th:each="project : ${projects}">
-	           <td th:text="${project.id}"></td>
-	           <td th:text="${project.name}"></td>
-	       </tr>
-	   </table>
+	    <div class="row course-list list">
+	        <div class='row course-list list'>
+	            <div th:each="project,it : ${projects}">
+	                <div th:if="${(it.count gt 0 and it.count lt 4)}">
+	                    <div th:replace="fragments/projectdiv :: projectdiv">
 	
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	
+	    <div class="row course-list list">
+	        <div class='row course-list list'>
+	            <div th:each="project,it : ${projects}">
+	                <div th:if="${(it.count gt 3 and it.count lt 7)}">
+	                    <div th:replace="fragments/projectdiv :: projectdiv">
+	
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<!-- 
 	    <div class="row course-list list" th:remove="all">
 	        <div class="col-md-4">
 	            <div class="course-listing">
@@ -267,7 +282,7 @@
 	        </div>
 	    </div>
 	</div>
-	
+	 -->
 	<div class="container" th:replace="fragments/footer :: footer">
 		<p>footer</p>
 	</div>

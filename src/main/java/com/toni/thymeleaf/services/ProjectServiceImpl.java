@@ -64,7 +64,7 @@ public class ProjectServiceImpl implements ProjectService {
         Project eurosnovos= new Project();
         eurosnovos.setId(1);
         eurosnovos.setName("EurosNovos");
-        eurosnovos.setSubtitule("SpringBoot Application");
+        eurosnovos.setSubtitle("SpringBoot Application");
         eurosnovos.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
         		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
         		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
@@ -83,7 +83,7 @@ public class ProjectServiceImpl implements ProjectService {
         Project cryptokit = new Project();
         cryptokit.setId(2);
         cryptokit.setName("Cryptokit");
-        cryptokit.setSubtitule("Java Swing with JCA and BouncyCastle");
+        cryptokit.setSubtitle("Java Swing with JCA and BouncyCastle");
         cryptokit.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
         		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
         		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
@@ -101,7 +101,7 @@ public class ProjectServiceImpl implements ProjectService {
         Project setupmakeup = new Project();
         setupmakeup.setId(3);
         setupmakeup.setName("Setup-Makeup");
-        setupmakeup.setSubtitule("Spring MVC application (xml conf) and Tiles");
+        setupmakeup.setSubtitle("Spring MVC application (xml conf) and Tiles");
         setupmakeup.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
         		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
         		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
@@ -120,7 +120,7 @@ public class ProjectServiceImpl implements ProjectService {
         Project setuptecnorepo = new Project();
         setuptecnorepo.setId(4);
         setuptecnorepo.setName("Setup-Tecnorepo");
-        setuptecnorepo.setSubtitule("Struts 2 application");
+        setuptecnorepo.setSubtitle("Struts 2 application");
         setuptecnorepo.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
         		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
         		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
@@ -139,7 +139,7 @@ public class ProjectServiceImpl implements ProjectService {
         Project peeperjava = new Project();
         peeperjava.setId(5);
         peeperjava.setName("Peeperjava");
-        peeperjava.setSubtitule("Maven project with multiple Java versions");
+        peeperjava.setSubtitle("Maven project with multiple Java versions");
         peeperjava.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
         		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
         		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
@@ -157,7 +157,7 @@ public class ProjectServiceImpl implements ProjectService {
         Project peepermaven = new Project();
         peepermaven.setId(6);
         peepermaven.setName("Peepermaven");
-        peepermaven.setSubtitule("Maven projects with multiple elements of Maven");
+        peepermaven.setSubtitle("Maven projects with multiple elements of Maven");
         peepermaven.setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed\r\n" + 
         		"						do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n" + 
         		"						enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n" + 
