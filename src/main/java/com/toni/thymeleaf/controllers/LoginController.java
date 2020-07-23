@@ -18,17 +18,23 @@ public class LoginController {
 
         model.addAttribute("loginCommand", new LoginCommand());
 
-        return "login";
+        return "loginform";
     }
 
-    @RequestMapping(value = "/dologin", method = RequestMethod.POST)
+    @RequestMapping("logout-success")
+    public String yourLoggedOut(){
+
+        return "logout-success";
+    }
+
+    //@RequestMapping(value = "/dologin", method = RequestMethod.POST)
     public String doLogin(@Valid LoginCommand loginCommand, BindingResult bindingResult){
 
         if(bindingResult.hasErrors()){
-            return "login";
-        }
+	        return "loginform";        
+	    }
 
-        return "redirect:/";
-        //tamb se puede usar return "redirect:index";
-    }
+        return "redirect:index";
+        //tamb se puede return "redirect:/";
+	}
 }
