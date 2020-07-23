@@ -5,8 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-	<div class="col-md-4" th:fragment="projectdiv">
-	    <div class="course-listing">
+    <div th:fragment="projectdiv">
+   		<div class="course-listing">
 	        <div class="row">
 	            <a th:href="@{'/project/'+${project.id}}">
 	                <div class="col-lg-12">
@@ -28,12 +28,14 @@
 	        </div>
 	        <div class="row course-listing-extra-info col-xl-12">
 	            <div class="col-xl-8">
-	                <img alt="Toni Ferreiro"
-	                     th:src="@{'/images/'+${project.developer.image}}"
-	                     class="img-circle"/>
-	                <div class="small course-author-name" th:text="${(project.developer.firstName)
-	                                                          + ' ' + (project.developer.lastName)}">
-	                    Toni Ferreiro
+	            	<div class="col-xl-12">
+		                <img alt="Toni Ferreiro"
+		                     th:src="@{'/images/'+${project.developer.image}}"
+		                     class="img-circle"/>
+		                <div class="small course-author-name" th:text="${(project.developer.firstName)
+		                                                          + ' ' + (project.developer.lastName)}">
+		                    Toni Ferreiro
+		                </div>
 	                </div>
 	            </div>
 	            <div class="col-xl-4">
@@ -43,7 +45,7 @@
 	                </div>
 	            </div>
 	        </div>
-	    </div>
-	</div>
+         </div>
+     </div>
 </body>
 </html>
